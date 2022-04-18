@@ -45,12 +45,52 @@
   <link rel="stylesheet" href='/us-en/active-iq-unified-manager/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/us-en/active-iq-unified-manager/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/active-iq-unified-manager/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/us-en/active-iq-unified-manager/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/us-en/active-iq-unified-manager/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/us-en/active-iq-unified-manager/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/us-en/active-iq-unified-manager/css/tabbed-blocks.css" type="text/css">
-  <link rel='stylesheet' href='/us-en/active-iq-unified-manager/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/us-en/active-iq-unified-manager/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
@@ -60,15 +100,6 @@
 
   <script src='/us-en/active-iq-unified-manager/js/na-utility.js'></script>
   <script src='/us-en/active-iq-unified-manager/js/clouddocs.js'></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    var head = document.getElementsByTagName('head')[0];
-    var adobe = document.createElement("script");
-    adobe.type = "text/javascript";
-    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
-    head.appendChild(adobe);
-  }
-  </script>
   <script src='/us-en/active-iq-unified-manager/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/us-en/active-iq-unified-manager/js/toc.js'></script>
@@ -121,16 +152,8 @@
               $("#tg-sb-icon").toggleClass('fa-toggle-off');
           });
       });
-  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-81697994-3');
-  }
   </script>
-  <script src='/us-en/active-iq-unified-manager/js/version-dropdown.js'></script>
+  <script src='/us-en/active-iq-unified-manager/js/custom-dropdown.js'></script>
   <script src='/us-en/active-iq-unified-manager/js/FileSaver.min.js'></script>
   <script src='/us-en/active-iq-unified-manager/js/jszip-utils.min.js'></script>
   <script src='/us-en/active-iq-unified-manager/js/jszip.min.js'></script>
@@ -138,20 +161,15 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
   <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/issues/new?body=Page%3A%20[Managing user access](https://docs.netapp.com/us-en/active-iq-unified-manager/config/concept_manage_user_access.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/active-iq-unified-manager/images/discuss-sm.svg" class="github-icon" />Request doc changes</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/blob/main/config/concept_manage_user_access.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/active-iq-unified-manager/images/edit-sm.svg" class="github-icon" />Edit this page</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/active-iq-unified-manager/images/article-sm.svg" class="github-icon" />Learn how to contribute</a>
-    </div>
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/issues/new?body=Page%3A%20[Managing user access](https://docs.netapp.com/us-en/active-iq-unified-manager/config/concept_manage_user_access.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/active-iq-unified-manager/images/discuss-sm.svg" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/blob/main/config/concept_manage_user_access.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/active-iq-unified-manager/images/edit-sm.svg" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/active-iq-unified-manager/images/article-sm.svg" class="github-icon" />Learn how to contribute</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">ON THIS PAGE</div>
@@ -161,6 +179,7 @@
       </nav>
     </div>
   </div>
+  
   
   <!-- Start top_hat -->
   <div class="n-top-hat">
@@ -244,7 +263,8 @@
           data-did-you-mean="Search for {suggestion}." 
           data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
           data-results-found="{hitCount} results found"  
-          data-sk-es-pf-indexes=""></div>
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -333,6 +353,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/us-en/active-iq-unified-manager/pdfs/fullsite-sidebar/Active_IQ_Unified_Manager_Documentation.pdf" >
           <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>PDF of this doc site</a>
 
@@ -343,6 +366,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Get_started.pdf" 
@@ -371,6 +397,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Install_Unified_Manager_on_VMware_vSphere_systems.pdf" 
@@ -384,6 +413,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager.pdf" 
@@ -410,6 +442,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Requirements_for_installing_Unified_Manager.pdf" 
@@ -442,6 +477,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Installing__upgrading__and_removing_Unified_Manager_software.pdf" 
@@ -457,6 +495,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Deploying_Unified_Manager.pdf" 
@@ -483,6 +524,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Upgrading_Unified_Manager.pdf" 
@@ -531,6 +575,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Install_Unified_Manager_on_Linux_systems.pdf" 
@@ -544,6 +591,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager.pdf" 
@@ -570,6 +620,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Requirements_for_installing_Unified_Manager.pdf" 
@@ -602,6 +655,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Installing__upgrading__and_removing_Unified_Manager_software.pdf" 
@@ -617,6 +673,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Setting_up_required_software_repositories.pdf" 
@@ -645,6 +704,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Installing_Unified_Manager_on_Linux_systems.pdf" 
@@ -677,6 +739,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Upgrading_Unified_Manager_on_Red_Hat_Enterprise_Linux_or_CentOS.pdf" 
@@ -703,6 +768,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Upgrading_third_party_products_post_Unified_Manager_installation.pdf" 
@@ -751,6 +819,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Install_Unified_Manager_on_Windows_systems.pdf" 
@@ -764,6 +835,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager.pdf" 
@@ -790,6 +864,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Requirements_for_installing_Unified_Manager.pdf" 
@@ -822,6 +899,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Installing__upgrading__and_removing_Unified_Manager_software.pdf" 
@@ -837,6 +917,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Installing_Unified_Manager_on_Windows.pdf" 
@@ -867,6 +950,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Upgrading_third_party_products.pdf" 
@@ -913,6 +999,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Perform_configuration_and_administrative_tasks.pdf" 
@@ -926,6 +1015,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Configuring_Active_IQ_Unified_Manager.pdf" 
@@ -947,6 +1039,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Configuring_Unified_Manager_to_send_alert_notifications.pdf" 
@@ -987,6 +1082,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Changing_the_Unified_Manager_host_name.pdf" 
@@ -1000,6 +1098,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Changing_the_Unified_Manager_virtual_appliance_host_name.pdf" 
@@ -1050,6 +1151,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_feature_settings.pdf" 
@@ -1086,6 +1190,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Using_the_maintenance_console.pdf" 
@@ -1109,6 +1216,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Maintenance_console_menus.pdf" 
@@ -1147,6 +1257,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Adding_disk_space_to_the_Unified_Manager_database_directory.pdf" 
@@ -1184,6 +1297,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_user_access.pdf" 
@@ -1197,6 +1313,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Adding_users.pdf" 
@@ -1255,6 +1374,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_SAML_authentication_settings.pdf" 
@@ -1291,6 +1413,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_authentication.pdf" 
@@ -1310,6 +1435,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Audit_Logging.pdf" 
@@ -1347,6 +1475,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_security_certificates.pdf" 
@@ -1368,6 +1499,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Page_descriptions_for_certificate_management.pdf" 
@@ -1412,6 +1546,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitor_and_manage_storage.pdf" 
@@ -1425,6 +1562,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager.pdf" 
@@ -1444,6 +1584,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/What_the_Unified_Manager_server_does.pdf" 
@@ -1477,6 +1620,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_the_user_interface.pdf" 
@@ -1515,6 +1661,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_and_managing_clusters_from_the_dashboard.pdf" 
@@ -1530,6 +1679,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Fixing_or_managing_ONTAP_issues_directly_from_Unified_Manager.pdf" 
@@ -1569,6 +1721,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_clusters.pdf" 
@@ -1603,6 +1758,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_VMware_virtual_infrastructure.pdf" 
@@ -1631,6 +1789,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Provisioning_and_managing_workloads.pdf" 
@@ -1644,6 +1805,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Workloads_overview.pdf" 
@@ -1674,6 +1838,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_Performance_Service_Levels.pdf" 
@@ -1698,6 +1865,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_Storage_Efficiency_Policies.pdf" 
@@ -1731,6 +1901,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_and_monitoring_MetroCluster_configurations.pdf" 
@@ -1744,6 +1917,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performance_monitoring_of_MetroCluster_configurations.pdf" 
@@ -1785,6 +1961,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_quotas.pdf" 
@@ -1808,6 +1987,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_more_about_quotas.pdf" 
@@ -1836,6 +2018,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Description_of_quotas_dialog_boxes.pdf" 
@@ -1871,6 +2056,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Troubleshooting.pdf" 
@@ -1884,6 +2072,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Adding_disk_space_to_the_Unified_Manager_database_directory.pdf" 
@@ -1940,6 +2131,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Manage_events_and_alerts.pdf" 
@@ -1953,6 +2147,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_events.pdf" 
@@ -1968,6 +2165,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/What_Event_Management_System_events_are.pdf" 
@@ -2018,6 +2218,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/What_a_Unified_Manager_maintenance_window_is.pdf" 
@@ -2048,6 +2251,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_more_about_events.pdf" 
@@ -2084,6 +2290,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/List_of_events_and_severity_types.pdf" 
@@ -2170,6 +2379,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Description_of_event_windows_and_dialog_boxes.pdf" 
@@ -2187,6 +2399,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Event_details_page.pdf" 
@@ -2237,6 +2452,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_alerts.pdf" 
@@ -2254,6 +2472,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Adding_alerts.pdf" 
@@ -2292,6 +2513,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Description_of_alert_windows_and_dialog_boxes.pdf" 
@@ -2329,6 +2553,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_scripts.pdf" 
@@ -2352,6 +2579,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Description_of_script_windows_and_dialog_boxes.pdf" 
@@ -2396,6 +2626,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitor_and_manage_cluster_performance.pdf" 
@@ -2409,6 +2642,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager_performance_monitoring.pdf" 
@@ -2441,6 +2677,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Navigating_performance_workflows_in_the_Unified_Manager_GUI.pdf" 
@@ -2456,6 +2695,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Graphical_interface_and_navigational_paths.pdf" 
@@ -2497,6 +2739,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_performance_events_and_alerts.pdf" 
@@ -2527,6 +2772,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_performance_thresholds.pdf" 
@@ -2571,6 +2819,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_cluster_performance_from_the_Dashboard.pdf" 
@@ -2599,6 +2850,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Troubleshooting_workloads_using_the_workload_analyzer.pdf" 
@@ -2627,6 +2881,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_cluster_performance_from_the_Performance_Cluster_Landing_page.pdf" 
@@ -2642,6 +2899,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performance_Cluster_Landing_page.pdf" 
@@ -2655,6 +2915,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performance_Cluster_Summary_page.pdf" 
@@ -2701,6 +2964,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_performance_using_the_Performance_Inventory_pages.pdf" 
@@ -2716,6 +2982,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Refining_Performance_inventory_page_contents.pdf" 
@@ -2755,6 +3024,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_performance_using_the_Performance_Explorer_pages.pdf" 
@@ -2772,6 +3044,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Specifying_a_time_range_for_correlated_objects.pdf" 
@@ -2812,6 +3087,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Counter_Charts_Zoom_View.pdf" 
@@ -2850,6 +3128,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Components_of_the_Object_Landing_pages.pdf" 
@@ -2885,6 +3166,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_performance_using_QoS_policy_group_information.pdf" 
@@ -2921,6 +3205,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_performance_using_performance_capacity_and_available_IOPS_information.pdf" 
@@ -2959,6 +3246,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_and_using_the_Node_Failover_Planning_page.pdf" 
@@ -2989,6 +3279,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Collecting_data_and_monitoring_workload_performance.pdf" 
@@ -3014,6 +3307,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performance_monitoring_of_MetroCluster_configurations.pdf" 
@@ -3038,6 +3334,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/What_performance_events_are.pdf" 
@@ -3077,6 +3376,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Analyzing_performance_events.pdf" 
@@ -3092,6 +3394,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Analyzing_events_from_user_defined_performance_thresholds.pdf" 
@@ -3116,6 +3421,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Analyzing_events_from_system_defined_performance_thresholds.pdf" 
@@ -3148,6 +3456,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Analyzing_events_from_dynamic_performance_thresholds.pdf" 
@@ -3167,6 +3478,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performance_event_analysis_for_a_MetroCluster_configuration.pdf" 
@@ -3217,6 +3531,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Resolving_performance_events.pdf" 
@@ -3242,6 +3559,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Run_storage_efficiency_operations_at_less_busy_times.pdf" 
@@ -3301,6 +3621,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Setting_up_a_connection_between_a_Unified_Manager_server_and_an_external_data_provider.pdf" 
@@ -3338,6 +3661,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitor_and_manage_cluster_health.pdf" 
@@ -3351,6 +3677,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager_health_monitoring.pdf" 
@@ -3377,6 +3706,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_and_monitoring_clusters_and_cluster_object_health.pdf" 
@@ -3390,6 +3722,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_cluster_monitoring.pdf" 
@@ -3459,6 +3794,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Common_Unified_Manager_health_workflows_and_tasks.pdf" 
@@ -3472,6 +3810,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_and_troubleshooting_data_availability.pdf" 
@@ -3485,6 +3826,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Scanning_for_and_resolving_storage_failover_interconnect_link_down_conditions.pdf" 
@@ -3509,6 +3853,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Resolving_volume_offline_issues.pdf" 
@@ -3522,6 +3869,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performing_diagnostic_actions_for_volume_offline_conditions.pdf" 
@@ -3568,6 +3918,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Resolving_capacity_issues.pdf" 
@@ -3592,6 +3945,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_health_thresholds.pdf" 
@@ -3607,6 +3963,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Configuring_global_health_threshold_settings.pdf" 
@@ -3652,6 +4011,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_cluster_security_objectives.pdf" 
@@ -3665,6 +4027,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/What_security_criteria_is_being_evaluated.pdf" 
@@ -3722,6 +4087,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_backup_and_restore_operations.pdf" 
@@ -3737,6 +4105,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Backup_and_restore_using_a_MySQL_database_dump.pdf" 
@@ -3767,6 +4138,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Backup_and_restore_using_NetApp_Snapshots.pdf" 
@@ -3780,6 +4154,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Configuring_backup_on_Linux.pdf" 
@@ -3806,6 +4183,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Configuring_backup_on_Windows.pdf" 
@@ -3866,6 +4246,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_scripts.pdf" 
@@ -3896,6 +4279,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_and_monitoring_groups.pdf" 
@@ -3909,6 +4295,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_groups.pdf" 
@@ -3968,6 +4357,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Prioritizing_storage_object_events_using_annotations.pdf" 
@@ -3981,6 +4373,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_more_about_annotations.pdf" 
@@ -4040,6 +4435,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Sending_a_support_bundle_through_web_UI_and_maintenance_console.pdf" 
@@ -4074,6 +4472,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Tasks_and_information_related_to_several_workflows.pdf" 
@@ -4124,6 +4525,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Protect_and_restore_data.pdf" 
@@ -4137,6 +4541,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Creating_and_troubleshooting_protection_relationships.pdf" 
@@ -4152,6 +4559,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Setting_up_protection_relationships_in_Unified_Manager.pdf" 
@@ -4182,6 +4592,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performing_a_protection_relationship_failover_and_failback.pdf" 
@@ -4212,6 +4625,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Resolving_a_protection_job_failure.pdf" 
@@ -4247,6 +4663,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_and_monitoring_protection_relationships.pdf" 
@@ -4334,6 +4753,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_Storage_VM_Disaster_Recovery_protection_relationships.pdf" 
@@ -4382,6 +4804,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Description_of_Protection_relationships_windows_and_dialog_boxes.pdf" 
@@ -4470,6 +4895,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Generate_custom_reports.pdf" 
@@ -4483,6 +4911,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Unified_Manager_reporting.pdf" 
@@ -4496,6 +4927,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Access_points_for_generating_reports.pdf" 
@@ -4539,6 +4973,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Working_with_reports.pdf" 
@@ -4558,6 +4995,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_reports.pdf" 
@@ -4601,6 +5041,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Scheduling_reports.pdf" 
@@ -4614,6 +5057,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Scheduling_a_report.pdf" 
@@ -4638,6 +5084,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_report_schedules.pdf" 
@@ -4673,6 +5122,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Sample_custom_reports.pdf" 
@@ -4686,6 +5138,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_cluster_storage_reports.pdf" 
@@ -4716,6 +5171,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_aggregate_capacity_reports.pdf" 
@@ -4744,6 +5202,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_volume_capacity_reports.pdf" 
@@ -4772,6 +5233,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_Qtree_capacity_reports.pdf" 
@@ -4796,6 +5260,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_NFS_share_reports.pdf" 
@@ -4822,6 +5289,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_storage_VM_reports.pdf" 
@@ -4848,6 +5318,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_volume_relationship_reports.pdf" 
@@ -4882,6 +5355,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_volume_performance_reports.pdf" 
@@ -4915,6 +5391,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Sample_Microsoft_Excel_reports.pdf" 
@@ -4954,6 +5433,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Manage_storage_using_REST_APIs.pdf" 
@@ -4967,6 +5449,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Getting_started_with_Active_IQ_Unified_Manager.pdf" 
@@ -4999,6 +5484,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/REST_API_access_and_authentication_in_Active_IQ_Unified_Manager.pdf" 
@@ -5031,6 +5519,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Unified_Manager_REST_APIs.pdf" 
@@ -5058,6 +5549,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_workloads.pdf" 
@@ -5103,6 +5597,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Common_workflows_for_storage_management.pdf" 
@@ -5122,6 +5619,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Workflows_for_workload_management.pdf" 
@@ -5141,6 +5641,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Modifying_storage_workloads.pdf" 
@@ -7045,6 +7548,7 @@
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
+
   </div>
   
 
@@ -7105,98 +7609,122 @@
   <div class="n-footer__bottom">
     <div class="n-container">
       <div class="n-footer__bottom-left">
-
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
-
-</ul>
-</div>
-<div class="n-footer__social-links">
-<ul class="n-footer__social-link-list">
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
-<span class="n-footer__social-link-text">blog</span>
-<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
-  <title>blog@</title>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#blog"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
-<span class="n-footer__social-link-text">community</span>
-<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
-<title>community@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#comments"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
-<span class="n-footer__social-link-text">twitter</span>
-<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
-<title>twitter@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#twitter"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
-<span class="n-footer__social-link-text">facebook</span>
-<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
-<title>facebook@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#facebook"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
-<span class="n-footer__social-link-text">linkedin</span>
-<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
-<title>linkedin@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#linkedin"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
-<span class="n-footer__social-link-text">youtube</span>
-<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
-<title>youtube@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#youtube"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
-<span class="n-footer__social-link-text">slideshare</span>
-<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
-<title>slideshare@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#slideshare"></use>
-</svg>
-
-</a>
-</li>
-</ul>
-</div>
-
-</div>
-<div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">Have feedback for our website?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">Let us know</a>
-  <a href="https://docs.netapp.com/us-en/announcements/" class="n-footer__copyright">Announcements</a>
-  </p>
-</div>
-</div>
-</div>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Terms of Use</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">Have feedback for our website?</span>
+              <a target="_self" href="javascript:netapp_mailto()">Let us know</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/us-en/announcements/">Announcements</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
       </div><!-- Elasticsearch JS -->
