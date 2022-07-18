@@ -170,30 +170,30 @@
   <!-- Start Page Toolbar -->
   
   <div class="page-nav-toolbar"><div id="version-dropdown-new" class="custom-dropdown" >
-  <div class="custom-dropdown-select unselected" title="Active IQ Unified Manager 9.11">
+  <div class="custom-dropdown-select unselected" title="Unified Manager 9.11">
     <label>Version</label>
-    <span translate="no" class="notranslate">Active IQ Unified Manager 9.11</span>
-    <img src="/us-en/active-iq-unified-manager/images/chevron_up.svg" class="custom-icon chevrondown invisible" />
-    <img src="/us-en/active-iq-unified-manager/images/chevron_down.svg" class="custom-icon chevronup" />
+    <span translate="no" class="notranslate">Unified Manager 9.11</span>
+    <img src="/us-en/active-iq-unified-manager/images/chevron_up.svg" alt="" class="custom-icon chevrondown invisible" />
+    <img src="/us-en/active-iq-unified-manager/images/chevron_down.svg" alt="" class="custom-icon chevronup" />
   </div>
 
   <ul class="custom-dropdown-menu"><li>
       
       <a href="https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_management_station_events.html" target="_self">
-        <span translate="no" class="notranslate"><span>Active IQ Unified Manager</span><span class="version"> 9.11</span></span>
+        <span translate="no" class="notranslate"><span>Unified Manager</span><span class="version"> 9.11</span></span>
       </a>
                      
     </li>
     <li>
       
       <a href="https://docs.netapp.com/us-en/active-iq-unified-manager-910/events/reference_management_station_events.html" target="_self">
-        <span translate="no" class="notranslate"><span>Active IQ Unified Manager</span><span class="version"> 9.10</span></span>
+        <span translate="no" class="notranslate"><span>Unified Manager</span><span class="version"> 9.10</span></span>
       </a>
                      
     </li>
     
   </ul>
-</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/issues/new?body=Page%3A%20[Management station events](https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_management_station_events.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/active-iq-unified-manager/images/discuss-sm.svg" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/blob/main/events/reference_management_station_events.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/active-iq-unified-manager/images/edit-sm.svg" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/active-iq-unified-manager/images/article-sm.svg" class="github-icon" />Learn how to contribute</a></div>
+</div><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/issues/new?body=Page%3A%20[Management station events](https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_management_station_events.html)" class="page-nav-contribute-link" role="button"><img src="/us-en/active-iq-unified-manager/images/discuss-sm.svg" alt="" class="github-icon" />Request doc changes</a><a target="_blank" href="https://github.com/NetAppDocs/active-iq-unified-manager/blob/main/events/reference_management_station_events.adoc" class="page-nav-contribute-link" role="button"><img src="/us-en/active-iq-unified-manager/images/edit-sm.svg" alt="" class="github-icon" />Edit this page</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/us-en/active-iq-unified-manager/images/article-sm.svg" alt="" class="github-icon" />Learn how to contribute</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">ON THIS PAGE</div>
@@ -282,11 +282,13 @@
           <div id="react-search" 
           data-search-html="/us-en/active-iq-unified-manager/search.html"
           data-type="widget" 
-          data-placeholder="Search Documentation" 
-          data-no-results-found="No results were found for {query}" 
-          data-did-you-mean="Search for {suggestion}." 
-          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?" 
-          data-results-found="{hitCount} results found"  
+          data-placeholder="Search Documentation"
+          data-no-results-found="No results were found for {query}"
+          data-did-you-mean="Search for {suggestion}."
+          data-no-results-found-did-you-mean="No results found for {query}. Did you mean {suggestion}?"
+          data-results-found="{hitCount} results found"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -301,35 +303,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">English</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">English</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/us-en/active-iq-unified-manager/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_management_station_events.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/active-iq-unified-manager/events/reference_management_station_events.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/active-iq-unified-manager/events/reference_management_station_events.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/active-iq-unified-manager/events/reference_management_station_events.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/active-iq-unified-manager/events/reference_management_station_events.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/us-en/active-iq-unified-manager/events/reference_management_station_events.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/active-iq-unified-manager/events/reference_management_station_events.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/active-iq-unified-manager/events/reference_management_station_events.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/active-iq-unified-manager/events/reference_management_station_events.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/active-iq-unified-manager/events/reference_management_station_events.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -373,7 +367,7 @@
   <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>Available PDFs<span>
+    <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>Available PDFs<span>
     </span>
   </a>
 </div>
@@ -383,7 +377,7 @@
         
         
         <a target="_blank" href="/us-en/active-iq-unified-manager/pdfs/fullsite-sidebar/Active_IQ_Unified_Manager_Documentation.pdf" >
-          <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>PDF of this doc site</a>
+          <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>PDF of this doc site</a>
 
 
 
@@ -400,7 +394,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Get_started.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Get started
           </a>
           
@@ -410,8 +404,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -431,7 +423,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Install_Unified_Manager_on_VMware_vSphere_systems.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Install Unified Manager on VMware vSphere systems
           </a>
           
@@ -447,7 +439,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Introduction to Active IQ Unified Manager
           </a>
           
@@ -455,8 +447,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -476,7 +466,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Requirements_for_installing_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Requirements for installing Unified Manager
           </a>
           
@@ -490,8 +480,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -511,7 +499,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Installing__upgrading__and_removing_Unified_Manager_software.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Installing, upgrading, and removing Unified Manager software
           </a>
           
@@ -529,7 +517,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Deploying_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Deploying Unified Manager
           </a>
           
@@ -537,8 +525,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -558,7 +544,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Upgrading_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Upgrading Unified Manager
           </a>
           
@@ -566,8 +552,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -579,8 +563,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -588,8 +570,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -609,7 +589,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Install_Unified_Manager_on_Linux_systems.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Install Unified Manager on Linux systems
           </a>
           
@@ -625,7 +605,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Introduction to Active IQ Unified Manager
           </a>
           
@@ -633,8 +613,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -654,7 +632,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Requirements_for_installing_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Requirements for installing Unified Manager
           </a>
           
@@ -668,8 +646,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -689,7 +665,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Installing__upgrading__and_removing_Unified_Manager_software.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Installing, upgrading, and removing Unified Manager software
           </a>
           
@@ -707,7 +683,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Setting_up_required_software_repositories.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Setting up required software repositories
           </a>
           
@@ -715,8 +691,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -738,7 +712,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Installing_Unified_Manager_on_Linux_systems.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Installing Unified Manager on Linux systems
           </a>
           
@@ -752,8 +726,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -773,7 +745,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Upgrading_Unified_Manager_on_Red_Hat_Enterprise_Linux_or_CentOS.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Upgrading Unified Manager on Red Hat Enterprise Linux or CentOS
           </a>
           
@@ -781,8 +753,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -802,14 +772,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Upgrading_third_party_products_post_Unified_Manager_installation.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Upgrading third-party products post Unified Manager installation
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -823,8 +791,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -832,8 +798,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -853,7 +817,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Install_Unified_Manager_on_Windows_systems.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Install Unified Manager on Windows systems
           </a>
           
@@ -869,7 +833,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Introduction to Active IQ Unified Manager
           </a>
           
@@ -877,8 +841,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -898,7 +860,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Requirements_for_installing_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Requirements for installing Unified Manager
           </a>
           
@@ -912,8 +874,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -933,7 +893,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Installing__upgrading__and_removing_Unified_Manager_software.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Installing, upgrading, and removing Unified Manager software
           </a>
           
@@ -951,7 +911,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Installing_Unified_Manager_on_Windows.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Installing Unified Manager on Windows
           </a>
           
@@ -959,8 +919,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -984,14 +942,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Upgrading_third_party_products.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Upgrading third-party products
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -1003,8 +959,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1012,8 +966,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1033,7 +985,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Perform_configuration_and_administrative_tasks.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Perform configuration and administrative tasks
           </a>
           
@@ -1049,7 +1001,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Configuring_Active_IQ_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Configuring Active IQ Unified Manager
           </a>
           
@@ -1073,7 +1025,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Configuring_Unified_Manager_to_send_alert_notifications.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Configuring Unified Manager to send alert notifications
           </a>
           
@@ -1091,8 +1043,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1116,7 +1066,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Changing_the_Unified_Manager_host_name.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Changing the Unified Manager host name
           </a>
           
@@ -1132,7 +1082,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Changing_the_Unified_Manager_virtual_appliance_host_name.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Changing the Unified Manager virtual appliance host name
           </a>
           
@@ -1140,8 +1090,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1151,8 +1099,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1162,8 +1108,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1185,7 +1129,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_feature_settings.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing feature settings
           </a>
           
@@ -1203,8 +1147,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1224,7 +1166,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Using_the_maintenance_console.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Using the maintenance console
           </a>
           
@@ -1250,7 +1192,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Maintenance_console_menus.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Maintenance console menus
           </a>
           
@@ -1262,8 +1204,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1291,7 +1231,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Adding_disk_space_to_the_Unified_Manager_database_directory.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Adding disk space to the Unified Manager database directory
           </a>
           
@@ -1301,8 +1241,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1310,8 +1248,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1331,7 +1267,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_user_access.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing user access
           </a>
           
@@ -1347,14 +1283,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Adding_users.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Adding users
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -1378,8 +1312,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1399,7 +1331,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_SAML_authentication_settings.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing SAML authentication settings
           </a>
           
@@ -1417,8 +1349,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1438,7 +1368,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_authentication.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing authentication
           </a>
           
@@ -1460,7 +1390,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Audit_Logging.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Audit Logging
           </a>
           
@@ -1468,8 +1398,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1479,8 +1407,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1500,7 +1426,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_security_certificates.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing security certificates
           </a>
           
@@ -1524,7 +1450,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Page_descriptions_for_certificate_management.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Page descriptions for certificate management
           </a>
           
@@ -1532,8 +1458,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1541,8 +1465,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1550,8 +1472,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1571,7 +1491,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitor_and_manage_storage.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Monitor and manage storage
           </a>
           
@@ -1587,7 +1507,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Introduction to Active IQ Unified Manager
           </a>
           
@@ -1609,14 +1529,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/What_the_Unified_Manager_server_does.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             What the Unified Manager server does
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -1624,8 +1542,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1645,7 +1561,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_the_user_interface.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Understanding the user interface
           </a>
           
@@ -1665,8 +1581,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1686,7 +1600,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_and_managing_clusters_from_the_dashboard.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Monitoring and managing clusters from the dashboard
           </a>
           
@@ -1704,7 +1618,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Fixing_or_managing_ONTAP_issues_directly_from_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Fixing or managing ONTAP issues directly from Unified Manager
           </a>
           
@@ -1716,8 +1630,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1725,8 +1637,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1746,7 +1656,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_clusters.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing clusters
           </a>
           
@@ -1762,8 +1672,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1783,7 +1691,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_VMware_virtual_infrastructure.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Monitoring VMware virtual infrastructure
           </a>
           
@@ -1793,8 +1701,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1814,7 +1720,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Provisioning_and_managing_workloads.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Provisioning and managing workloads
           </a>
           
@@ -1830,7 +1736,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Workloads_overview.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Workloads overview
           </a>
           
@@ -1842,8 +1748,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1863,14 +1767,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_Performance_Service_Levels.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing Performance Service Levels
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -1890,14 +1792,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_Storage_Efficiency_Policies.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing Storage Efficiency Policies
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -1905,8 +1805,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -1926,7 +1824,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_and_monitoring_MetroCluster_configurations.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing and monitoring MetroCluster configurations
           </a>
           
@@ -1940,8 +1838,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -1961,7 +1857,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_quotas.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing quotas
           </a>
           
@@ -1987,7 +1883,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_more_about_quotas.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Understanding more about quotas
           </a>
           
@@ -1997,8 +1893,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2018,7 +1912,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Description_of_quotas_dialog_boxes.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Description of quotas dialog boxes
           </a>
           
@@ -2026,8 +1920,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2035,8 +1927,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -2056,7 +1946,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Troubleshooting.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Troubleshooting
           </a>
           
@@ -2072,7 +1962,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Adding_disk_space_to_the_Unified_Manager_database_directory.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Adding disk space to the Unified Manager database directory
           </a>
           
@@ -2082,8 +1972,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2101,8 +1989,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2110,8 +1996,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -2131,7 +2015,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Manage_events_and_alerts.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Manage events and alerts
           </a>
           
@@ -2147,7 +2031,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_events.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing events
           </a>
           
@@ -2165,7 +2049,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/What_Event_Management_System_events_are.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             What Event Management System events are
           </a>
           
@@ -2173,8 +2057,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2218,7 +2100,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/What_a_Unified_Manager_maintenance_window_is.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             What a Unified Manager maintenance window is
           </a>
           
@@ -2228,8 +2110,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2251,7 +2131,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_more_about_events.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Understanding more about events
           </a>
           
@@ -2269,8 +2149,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2290,7 +2168,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/List_of_events_and_severity_types.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             List of events and severity types
           </a>
           
@@ -2312,14 +2190,7 @@
 
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/us-en/active-iq-unified-manager/pdfs/pages/events/reference_management_station_events.pdf" >
-    <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
 
@@ -2367,8 +2238,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2388,7 +2257,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Description_of_event_windows_and_dialog_boxes.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Description of event windows and dialog boxes
           </a>
           
@@ -2408,7 +2277,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Event_details_page.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Event details page
           </a>
           
@@ -2418,8 +2287,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2431,8 +2298,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2440,8 +2305,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -2461,7 +2324,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_alerts.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing alerts
           </a>
           
@@ -2481,14 +2344,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Adding_alerts.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Adding alerts
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -2522,7 +2383,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Description_of_alert_windows_and_dialog_boxes.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Description of alert windows and dialog boxes
           </a>
           
@@ -2532,8 +2393,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2541,8 +2400,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -2562,7 +2419,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_scripts.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing scripts
           </a>
           
@@ -2588,7 +2445,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Description_of_script_windows_and_dialog_boxes.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Description of script windows and dialog boxes
           </a>
           
@@ -2596,8 +2453,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2605,8 +2460,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -2614,8 +2467,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -2635,7 +2486,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitor_and_manage_cluster_performance.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Monitor and manage cluster performance
           </a>
           
@@ -2651,7 +2502,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager_performance_monitoring.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Introduction to Active IQ Unified Manager performance monitoring
           </a>
           
@@ -2665,8 +2516,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2686,7 +2535,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Navigating_performance_workflows_in_the_Unified_Manager_GUI.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Navigating performance workflows in the Unified Manager GUI
           </a>
           
@@ -2704,7 +2553,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Graphical_interface_and_navigational_paths.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Graphical interface and navigational paths
           </a>
           
@@ -2714,8 +2563,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2727,8 +2574,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2748,7 +2593,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_cluster_performance_from_the_Dashboard.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Monitoring cluster performance from the Dashboard
           </a>
           
@@ -2758,8 +2603,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2779,7 +2622,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Troubleshooting_workloads_using_the_workload_analyzer.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Troubleshooting workloads using the workload analyzer
           </a>
           
@@ -2789,8 +2632,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2810,7 +2651,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_cluster_performance_from_the_Performance_Cluster_Landing_page.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Monitoring cluster performance from the Performance Cluster Landing page
           </a>
           
@@ -2828,7 +2669,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performance_Cluster_Landing_page.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Performance Cluster Landing page
           </a>
           
@@ -2844,7 +2685,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performance_Cluster_Summary_page.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Performance Cluster Summary page
           </a>
           
@@ -2852,8 +2693,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2863,8 +2702,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2872,8 +2709,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -2893,7 +2728,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_performance_using_the_Performance_Inventory_pages.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Monitoring performance using the Performance Inventory pages
           </a>
           
@@ -2911,7 +2746,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Refining_Performance_inventory_page_contents.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Refining Performance inventory page contents
           </a>
           
@@ -2921,8 +2756,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2932,8 +2765,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -2953,7 +2784,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_performance_using_the_Performance_Explorer_pages.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Monitoring performance using the Performance Explorer pages
           </a>
           
@@ -2973,7 +2804,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Specifying_a_time_range_for_correlated_objects.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Specifying a time range for correlated objects
           </a>
           
@@ -2981,8 +2812,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3016,7 +2845,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Counter_Charts_Zoom_View.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Counter Charts Zoom View
           </a>
           
@@ -3026,8 +2855,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3057,7 +2884,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Components_of_the_Object_Landing_pages.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Components of the Object Landing pages
           </a>
           
@@ -3065,8 +2892,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3074,8 +2899,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -3095,7 +2918,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_performance_using_QoS_policy_group_information.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing performance using QoS policy group information
           </a>
           
@@ -3113,8 +2936,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3134,7 +2955,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_performance_using_performance_capacity_and_available_IOPS_information.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing performance using performance capacity and available IOPS information
           </a>
           
@@ -3154,8 +2975,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3175,7 +2994,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_and_using_the_Node_Failover_Planning_page.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Understanding and using the Node Failover Planning page
           </a>
           
@@ -3187,8 +3006,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3208,7 +3025,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Collecting_data_and_monitoring_workload_performance.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Collecting data and monitoring workload performance
           </a>
           
@@ -3226,8 +3043,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3247,7 +3062,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_performance_events_and_alerts.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Understanding performance events and alerts
           </a>
           
@@ -3267,8 +3082,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3288,7 +3101,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_performance_thresholds.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing performance thresholds
           </a>
           
@@ -3314,8 +3127,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3335,7 +3146,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Analyzing_performance_events.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Analyzing performance events
           </a>
           
@@ -3353,14 +3164,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Analyzing_events_from_user_defined_performance_thresholds.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Analyzing events from user-defined performance thresholds
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -3380,7 +3189,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Analyzing_events_from_system_defined_performance_thresholds.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Analyzing events from system-defined performance thresholds
           </a>
           
@@ -3394,8 +3203,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3415,7 +3222,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Analyzing_events_from_dynamic_performance_thresholds.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Analyzing events from dynamic performance thresholds
           </a>
           
@@ -3437,7 +3244,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performance_event_analysis_for_a_MetroCluster_configuration.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Performance event analysis for a MetroCluster configuration
           </a>
           
@@ -3445,8 +3252,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3460,8 +3265,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3469,8 +3272,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -3490,7 +3291,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Resolving_performance_events.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Resolving performance events
           </a>
           
@@ -3518,14 +3319,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Run_storage_efficiency_operations_at_less_busy_times.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Run storage efficiency operations at less busy times
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -3559,8 +3358,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3580,7 +3377,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Setting_up_a_connection_between_a_Unified_Manager_server_and_an_external_data_provider.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Setting up a connection between a Unified Manager server and an external data provider
           </a>
           
@@ -3590,8 +3387,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3599,8 +3394,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -3620,7 +3413,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitor_and_manage_cluster_health.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Monitor and manage cluster health
           </a>
           
@@ -3636,7 +3429,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Introduction_to_Active_IQ_Unified_Manager_health_monitoring.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Introduction to Active IQ Unified Manager health monitoring
           </a>
           
@@ -3644,8 +3437,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3665,7 +3456,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_and_monitoring_clusters_and_cluster_object_health.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing and monitoring clusters and cluster object health
           </a>
           
@@ -3681,7 +3472,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_cluster_monitoring.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Understanding cluster monitoring
           </a>
           
@@ -3691,8 +3482,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3732,8 +3521,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3753,7 +3540,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Common_Unified_Manager_health_workflows_and_tasks.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Common Unified Manager health workflows and tasks
           </a>
           
@@ -3769,7 +3556,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_and_troubleshooting_data_availability.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Monitoring and troubleshooting data availability
           </a>
           
@@ -3785,14 +3572,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Scanning_for_and_resolving_storage_failover_interconnect_link_down_conditions.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Scanning for and resolving storage failover interconnect link down conditions
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -3812,7 +3597,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Resolving_volume_offline_issues.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Resolving volume offline issues
           </a>
           
@@ -3828,7 +3613,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performing_diagnostic_actions_for_volume_offline_conditions.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Performing diagnostic actions for volume offline conditions
           </a>
           
@@ -3838,8 +3623,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3847,8 +3630,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -3856,8 +3637,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -3877,14 +3656,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Resolving_capacity_issues.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Resolving capacity issues
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -3904,7 +3681,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_health_thresholds.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing health thresholds
           </a>
           
@@ -3922,7 +3699,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Configuring_global_health_threshold_settings.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Configuring global health threshold settings
           </a>
           
@@ -3934,8 +3711,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3949,8 +3724,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -3970,7 +3743,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_cluster_security_objectives.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing cluster security objectives
           </a>
           
@@ -3986,7 +3759,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/What_security_criteria_is_being_evaluated.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             What security criteria is being evaluated
           </a>
           
@@ -3996,8 +3769,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4025,8 +3796,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4046,7 +3815,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_backup_and_restore_operations.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing backup and restore operations
           </a>
           
@@ -4064,7 +3833,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Backup_and_restore_using_a_MySQL_database_dump.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Backup and restore using a MySQL database dump
           </a>
           
@@ -4076,8 +3845,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4097,7 +3864,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Backup_and_restore_using_NetApp_Snapshots.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Backup and restore using NetApp Snapshots
           </a>
           
@@ -4113,7 +3880,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Configuring_backup_on_Linux.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Configuring backup on Linux
           </a>
           
@@ -4121,8 +3888,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4142,7 +3907,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Configuring_backup_on_Windows.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Configuring backup on Windows
           </a>
           
@@ -4154,8 +3919,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4171,8 +3934,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4184,8 +3945,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4205,7 +3964,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_scripts.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing scripts
           </a>
           
@@ -4217,8 +3976,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4238,7 +3995,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_and_monitoring_groups.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing and monitoring groups
           </a>
           
@@ -4254,7 +4011,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_groups.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Understanding groups
           </a>
           
@@ -4264,8 +4021,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4295,8 +4050,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4316,7 +4069,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Prioritizing_storage_object_events_using_annotations.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Prioritizing storage object events using annotations
           </a>
           
@@ -4332,7 +4085,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Understanding_more_about_annotations.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Understanding more about annotations
           </a>
           
@@ -4342,8 +4095,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4373,8 +4124,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4394,7 +4143,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Sending_a_support_bundle_through_web_UI_and_maintenance_console.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Sending a support bundle through web UI and maintenance console
           </a>
           
@@ -4410,8 +4159,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4431,7 +4178,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Tasks_and_information_related_to_several_workflows.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Tasks and information related to several workflows
           </a>
           
@@ -4445,8 +4192,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4454,8 +4199,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -4463,8 +4206,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -4484,7 +4225,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Protect_and_restore_data.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Protect and restore data
           </a>
           
@@ -4500,7 +4241,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Creating_and_troubleshooting_protection_relationships.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Creating and troubleshooting protection relationships
           </a>
           
@@ -4518,7 +4259,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Setting_up_protection_relationships_in_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Setting up protection relationships in Unified Manager
           </a>
           
@@ -4530,8 +4271,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4551,7 +4290,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Performing_a_protection_relationship_failover_and_failback.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Performing a protection relationship failover and failback
           </a>
           
@@ -4563,8 +4302,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4584,14 +4321,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Resolving_a_protection_job_failure.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Resolving a protection job failure
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -4601,8 +4336,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4622,7 +4355,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_and_monitoring_protection_relationships.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing and monitoring protection relationships
           </a>
           
@@ -4712,7 +4445,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Monitoring_Storage_VM_Disaster_Recovery_protection_relationships.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Monitoring Storage VM Disaster Recovery protection relationships
           </a>
           
@@ -4722,8 +4455,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4757,7 +4488,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Description_of_Protection_relationships_windows_and_dialog_boxes.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Description of Protection relationships windows and dialog boxes
           </a>
           
@@ -4805,8 +4536,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4814,8 +4543,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -4823,8 +4550,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -4844,7 +4569,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Generate_custom_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Generate custom reports
           </a>
           
@@ -4860,7 +4585,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Unified_Manager_reporting.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Unified Manager reporting
           </a>
           
@@ -4876,7 +4601,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Access_points_for_generating_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Access points for generating reports
           </a>
           
@@ -4884,8 +4609,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4901,8 +4624,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4922,7 +4643,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Working_with_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Working with reports
           </a>
           
@@ -4944,7 +4665,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Customizing reports
           </a>
           
@@ -4958,8 +4679,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4969,8 +4688,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -4990,7 +4707,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Scheduling_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Scheduling reports
           </a>
           
@@ -5006,14 +4723,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Scheduling_a_report.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Scheduling a report
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -5033,7 +4748,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_report_schedules.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing report schedules
           </a>
           
@@ -5041,8 +4756,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -5050,8 +4763,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -5071,7 +4782,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Sample_custom_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Sample custom reports
           </a>
           
@@ -5087,7 +4798,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_cluster_storage_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Customizing cluster storage reports
           </a>
           
@@ -5099,8 +4810,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -5120,7 +4829,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_aggregate_capacity_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Customizing aggregate capacity reports
           </a>
           
@@ -5130,8 +4839,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -5151,7 +4858,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_volume_capacity_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Customizing volume capacity reports
           </a>
           
@@ -5161,8 +4868,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -5182,14 +4887,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_Qtree_capacity_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Customizing Qtree capacity reports
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -5209,7 +4912,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_NFS_share_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Customizing NFS share reports
           </a>
           
@@ -5217,8 +4920,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -5238,7 +4939,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_storage_VM_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Customizing storage VM reports
           </a>
           
@@ -5246,8 +4947,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -5267,7 +4966,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_volume_relationship_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Customizing volume relationship reports
           </a>
           
@@ -5283,8 +4982,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -5304,14 +5001,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Customizing_volume_performance_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Customizing volume performance reports
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -5319,8 +5014,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -5340,7 +5033,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Sample_Microsoft_Excel_reports.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Sample Microsoft Excel reports
           </a>
           
@@ -5352,8 +5045,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -5361,8 +5052,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -5382,7 +5071,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Manage_storage_using_REST_APIs.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Manage storage using REST APIs
           </a>
           
@@ -5398,7 +5087,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Getting_started_with_Active_IQ_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Getting started with Active IQ Unified Manager
           </a>
           
@@ -5412,8 +5101,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -5433,7 +5120,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/REST_API_access_and_authentication_in_Active_IQ_Unified_Manager.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             REST API access and authentication in Active IQ Unified Manager
           </a>
           
@@ -5447,8 +5134,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -5468,7 +5153,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Unified_Manager_REST_APIs.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Unified Manager REST APIs
           </a>
           
@@ -5498,7 +5183,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Managing_workloads.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Managing workloads
           </a>
           
@@ -5516,8 +5201,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -5525,8 +5208,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -5546,7 +5227,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Common_workflows_for_storage_management.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Common workflows for storage management
           </a>
           
@@ -5568,7 +5249,7 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Workflows_for_workload_management.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Workflows for workload management
           </a>
           
@@ -5590,14 +5271,12 @@
               href="/us-en/active-iq-unified-manager/pdfs/sidebar/Modifying_storage_workloads.pdf" 
             
           >
-            <img src="/us-en/active-iq-unified-manager/images/pdf.png" width="16" height="16"/>
+            <img src="/us-en/active-iq-unified-manager/images/pdf.png" alt="" width="16" height="16"/>
             Modifying storage workloads
           </a>
           
 
 
-
-          
         </li>
       </ul>
     
@@ -5605,8 +5284,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -5614,8 +5291,6 @@
   
 
 
-
-          
         </li>
       </ul>
     
@@ -5623,21 +5298,18 @@
   
 
 
-
-          
         </li>
       </ul>
     
 
   
-
 
 
 
 </li></ul>
   <div class="zip-pdf-link-container" style="display: none;">   
     <a href="#" id="zipPdf">
-      <img src="/us-en/active-iq-unified-manager/images/pdf-zip.png" width="16" height="16"/>
+      <img src="/us-en/active-iq-unified-manager/images/pdf-zip.png" alt="" width="16" height="16"/>
       <pre>Collection of separate PDF docs<span class="zip-size"></span></pre>
     </a><div id="zip-link-popup" class="hide">
     <div class="inner-modal">
@@ -5670,9 +5342,9 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/us-en/active-iq-unified-manager/index.html">
-        Active IQ Unified Manager docs
+        Active IQ Unified Manager 9.11 docs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/active-iq-unified-manager/reference_release_notes.html">
         Release notes
       </a></li><li class="subfolders "><a href="#">
@@ -6911,9 +6583,9 @@
         <div class="na-navbar-padding"> Configuring backup on Linux</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/us-en/active-iq-unified-manager/health-checker/task_create_volume_where_backups_are_stored.html">
-        Configuring Snapshot backup location
+        Configuring Snapshot copy location
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/active-iq-unified-manager/health-checker/task_specify_destination_location_for_snapshot_backups.html">
-        Specifying the destination location for Snapshot backups
+        Specifying the destination location for Snapshot copies
       </a></li></ul></li><li class="subfolders "><a href="/us-en/active-iq-unified-manager/health-checker/concept_configure_backup_for_windows.html">
         <div class="na-navbar-padding"> Configuring backup on Windows</div>
       </a>
@@ -6924,13 +6596,13 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/active-iq-unified-manager/health-checker/task_configure_windows_host_machine.html">
         Configuring Windows host machine
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/active-iq-unified-manager/health-checker/task_specify_destination_location_for_windows_snapshot_backups.html">
-        Specifying the destination location for Windows Snapshot backups
+        Specifying the destination location for Snapshot copies on Windows
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/active-iq-unified-manager/health-checker/task_configure_netapp_snapshot_backup_from_maintenance_console.html">
-        Configuring NetApp Snapshot backup from maintenance console
+        Configuring backup by Snapshot copy from maintenance console
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/active-iq-unified-manager/health-checker/task_define_schedule_for_snapshot_backups.html">
         Defining a backup schedule for Linux and Windows
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/active-iq-unified-manager/health-checker/task_restore_snapshot_backup.html">
-        Restoring a Snapshot backup for Linux and Windows
+        Restoring Unified Manager by using Snapshot copies
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/active-iq-unified-manager/health-checker/task_unconfigure_netapp_snapshot_backup.html">
         Modifying the backup type
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/us-en/active-iq-unified-manager/health-checker/concept_on_demand_backup_for_unified_manger.html">
@@ -7488,7 +7160,7 @@
         
 
         <li class="n-breadcrumb__list-item">
-          <a href="/us-en/active-iq-unified-manager/">Active&nbsp;IQ&nbsp;Unified&nbsp;Manager</a>
+          <a href="/us-en/active-iq-unified-manager/">Active&nbsp;IQ&nbsp;Unified&nbsp;Manager&nbsp;9.11</a>
         </li>
 
       </ul>
@@ -7924,4 +7596,5 @@
     </script>
     <script src='/us-en/active-iq-unified-manager/js/www-ntap.js'></script>
     <script src='/us-en/active-iq-unified-manager/js/tabbed-blocks.js'></script>
+    <script src='/us-en/active-iq-unified-manager/js/sidebar.js'></script>
   </body></html>
